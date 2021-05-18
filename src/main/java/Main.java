@@ -6,7 +6,13 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("This is the Maven Project");
+        System.out.println(GetMessage());
+    }
+
+    public static String GetMessage() {
+        return "Hello World";
+
+   
 
         //ResourceConfig rc = new ResourceConfig().packages("swlcm.controllers");
         //HttpServer server = JdkHttpServerFactory.createHttpServer(URI.create("http://localhost:8080/"), rc);
@@ -19,5 +25,6 @@ public class Main {
        // }
 
         //server.stop(0);
+
     }
 }
